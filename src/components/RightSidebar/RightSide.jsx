@@ -3,7 +3,7 @@ import PlayerControls from "../PlayerControls/PlayerControls";
 
 const RightSide = () => {
   return (
-    <div className="bg-[#eae5e5] box-border min-h-screen">
+    <div className="relative min-h-screen bg-[#eae5e5]">
       <PlayerControls />
     </div>
   );

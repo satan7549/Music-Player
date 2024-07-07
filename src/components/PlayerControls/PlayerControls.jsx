@@ -104,83 +104,79 @@ function PlayerControls({
   if (!currentSong) return null;
 
   return (
-    <aside className="fixed bottom-2 right-0 w-64 bg-red-900 shadow-lg rounded-lg overflow-hidden">
-      <div className="text-center py-2">Now Playing</div>
+    <div className="fixed bottom-2 right-6 w-56 bg-red-900 shadow-lg rounded-lg overflow-hidden">
+      <div className="text-center py-2 text-white font-semibold">
+        Now Playing
+      </div>
 
       <div className="p-2">
         <img
-          src="https://t3.ftcdn.net/jpg/03/26/52/14/360_F_326521465_d3Lv3za5GEGqYAR3M8bem2mHY1vjvmJP.jpg"
+          src={currentSong.posterSrc}
           alt="Now Playing"
-          className=" object-cover rounded-lg"
+          className="w-full h-32 object-cover rounded-lg"
         />
       </div>
-      <div className="p-4">
+
+      <div className="p-2">
         <div className="text-center mb-2">
-          <h4 className="text-lg font-bold">{currentSong.title}</h4>
-          <p className="text-gray-300">{currentSong.album}</p>
+          <h4 className="text-sm font-bold text-white">{currentSong.title}</h4>
+          <p className="text-xs text-gray-300">{currentSong.album}</p>
         </div>
+
         <div
-          className="flex justify-between items-center mb-2"
+          className="flex items-center mb-2"
           onClick={handleSeek}
           style={{ cursor: "pointer" }}
         >
           <span className="text-xs text-[#F6F6F6]">
             {formatTime(playedTime)}
           </span>
-          {/* <div className="relative flex-grow mx-2">
-            <div className="bg-gray-300 h-1 rounded-full">
+
+          <div className="relative m-auto flex-grow mx-2">
+            <div className="bg-gray-300 h-1 m-auto rounded-full">
               <div
                 className="bg-[#F6F6F6] h-full rounded-full"
                 style={{ width: `${(playedTime / totalTime) * 100}%` }}
-              >
-                <div
-                  className="absolute inset-0 m-auto bg-[#F6F6F6] rounded-full w-3 h-3"
-                  style={{ left: `${(playedTime / totalTime) * 100}%` }}
-                ></div>
-              </div>
-            </div>
-          </div> */}
-          <div className="relative flex-grow mx-2">
-            <div
-              className="bg-gray-300 h-1 rounded-full"
-              style={{ width: `${(playedTime / totalTime) * 100}%` }}
-            >
-              <div className="bg-[#F6F6F6] h-full rounded-full"></div>
+              ></div>
               <div
-                className="absolute inset-0  left-0 w-3 h-3 bg-[#F6F6F6] rounded-full"
-                style={{ left: `${(playedTime / totalTime) * 100}%` }}
+                className="absolute  bg-[#F6F6F6] w-3 h-3 -top-1 rounded-full"
+                style={{
+                  left: `${(playedTime / totalTime) * 100}%`,
+                  transform: "translateX(-50%)",
+                }}
               ></div>
             </div>
           </div>
+
           <span className="text-xs text-[#F6F6F6]">
             {formatTime(totalTime)}
           </span>
         </div>
 
-        <div className="flex justify-center space-x-4 mt-2">
-          <img src={RepeatIcon} className="control-icon" alt="Repeat" />
+        <div className="flex justify-center space-x-3 mt-2">
+          <img src={RepeatIcon} className="control-icon w-5 h-5" alt="Repeat" />
           <img
             src={RewindIcon}
-            className="control-icon"
+            className="control-icon w-5 h-5"
             alt="Rewind"
             onClick={playPrev}
           />
           <img
             src={howlInstance && howlInstance.playing() ? PauseIcon : PlayIcon}
-            className="control-icon"
+            className="control-icon w-6 h-6"
             alt="Play/Pause"
             onClick={playOrPause}
           />
           <img
             src={FastForwardIcon}
-            className="control-icon"
+            className="control-icon w-5 h-5"
             alt="Fast Forward"
             onClick={playNext}
           />
-          <img src={RandomIcon} className="control-icon" alt="Random" />
+          <img src={RandomIcon} className="control-icon w-5 h-5" alt="Random" />
         </div>
       </div>
-    </aside>
+    </div>
   );
 }
 

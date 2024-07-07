@@ -36,36 +36,41 @@ const MusicTable = () => {
 
   return (
     <DndProvider backend={HTML5Backend}>
-      <section className="max-w-3xl mx-auto ">
+      <section className="max-w-3xl mx-auto px-10 h-[40%] poppins-thin">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-lg font-bold">Popular</h3>
-          {/* <a href="#" className="text-gray-400 hover:underline"> */}
           <p>See All</p>
-          {/* </a> */}
         </div>
-        <table className=" w-full border border-yellow-600 text-sm shadow-md rounded-lg overflow-y-auto">
-          <thead>
-            <tr>
-              <th className="p-2 text-left">#</th>
-              <th className="p-2 text-left">TITLE</th>
-              <th className="p-2 text-left">PLAYING</th>
-              <th className="p-2 text-left">TIME</th>
-              <th className="p-2 text-left">ALBUM</th>
-            </tr>
-          </thead>
-          <tbody>
-            {songs.map((song, index) => (
-              <SongRow
-                key={song.id}
-                index={index}
-                song={song}
-                moveItem={moveItem}
-                playSong={playSong}
-                isPlaying={currentSong && currentSong.id === song.id}
-              />
-            ))}
-          </tbody>
-        </table>
+        <div className="w-full border border-yellow-600 text-sm shadow-md rounded-lg overflow-hidden">
+          <table className="w-full">
+            <thead>
+              <tr>
+                <th className="p-2 text-left">#</th>
+                <th className="p-2 text-left"></th>
+                <th className="p-2 text-left">TITLE</th>
+                <th className="p-2 text-left">PLAYING</th>
+                <th className="p-2 text-left">TIME</th>
+                <th className="p-2 text-right">ALBUM</th>
+              </tr>
+            </thead>
+          </table>
+          <div className="max-h-64 overflow-y-auto">
+            <table className="w-full">
+              <tbody>
+                {songs.map((song, index) => (
+                  <SongRow
+                    key={song.id}
+                    index={index}
+                    song={song}
+                    moveItem={moveItem}
+                    playSong={playSong}
+                    isPlaying={currentSong && currentSong.id === song.id}
+                  />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </section>
       <PlayerControls
         currentSong={currentSong}

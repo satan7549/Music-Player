@@ -54,10 +54,15 @@ const SongRow = ({ song, index, moveItem, playSong, isPlaying }) => {
         <td className="p-2">{index + 1}</td>
       )}
 
+      <td className="p-2">
+        <img src={song.posterSrc} className="w-10 h-10" alt={index + 1} />
+      </td>
       <td className="p-2">{song.title}</td>
       <td className="p-2">{song.playing}</td>
       <td className="p-2">{song.time}</td>
-      <td className="p-2">{song.album}</td>
+      <td className="p-2 w-[50px] text-right overflow-hidden text-ellipsis whitespace-nowrap    ">
+        {song.album}
+      </td>
     </tr>
   );
 };

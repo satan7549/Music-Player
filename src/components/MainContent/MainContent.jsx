@@ -5,7 +5,7 @@ import MusicTable from "./MusicTable";
 
 function MainContent() {
   return (
-    <main className=" w-full overflow-hidden">
+    <main className=" w-full  overflow-hidden">
       <ArtistInfo />
       <MusicTable />
     </main>
