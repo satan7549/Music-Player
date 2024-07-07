@@ -3,8 +3,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 function Header() {
   return (
-    <header className="flex  justify-between w-[90%] m-auto gap-2 items-center poppins-thin border border-yellow-500">
-      <nav className="border border-white">
+    <header className="flex  justify-between w-[90%] m-auto gap-2 py-3 items-center poppins-thin  ">
+      <nav className="">
         <ul className="list-none p-0 flex justify-around gap-16 ">
           <li>Music</li>
           <li>Podcast</li>
@@ -13,7 +13,7 @@ function Header() {
         </ul>
       </nav>
 
-      <div className="relative w-[50%] flex  items-center border border-white">
+      <div className="relative w-[50%] flex  items-center ">
         <input
           type="text"
           placeholder="Michael Jackson"

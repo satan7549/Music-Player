@@ -48,11 +48,13 @@ const SongRow = ({ song, index, moveItem, playSong, isPlaying }) => {
       onClick={handleRowClick}
       className="hover:bg-yellow-500 hover:text-white transition-colors duration-300"
     >
-      {isPlaying ? (
-        <img src={musicIcon} className="w-auto h-auto" alt="Music" />
-      ) : (
-        <td className="p-2">{index + 1}</td>
-      )}
+      <td className="p-2">
+        {isPlaying ? (
+          <img src={musicIcon} className="w-6 h-6" alt="Music Icon" />
+        ) : (
+          index + 1
+        )}
+      </td>
 
       <td className="p-2">
         <img src={song.posterSrc} className="w-10 h-10" alt={index + 1} />

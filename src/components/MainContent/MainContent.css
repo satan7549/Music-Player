@@ -1,11 +1,26 @@
 /* src/styles.css */
-
+/* 
 .main-content {
-  padding: 20px; /* Example padding */
+  padding: 20px; 
 }
 
 .main-content .section {
-  margin-bottom: 20px; /* Example margin */
+  margin-bottom: 20px; 
+} */
+
+main {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Hide scrollbar for Firefox */
+main {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Webkit browsers */
+main::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .background-image {

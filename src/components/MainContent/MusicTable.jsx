@@ -41,7 +41,7 @@ const MusicTable = () => {
           <h3 className="text-lg font-bold">Popular</h3>
           <p>See All</p>
         </div>
-        <div className="w-full border border-yellow-600 text-sm shadow-md rounded-lg overflow-hidden">
+        <div className="w-full text-sm shadow-md rounded-lg overflow-hidden">
           <table className="w-full">
             <thead>
               <tr>

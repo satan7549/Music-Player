@@ -4,7 +4,7 @@ import Verifyicon from "../../assets/icons/Verified.svg";
 
 const ArtistInfo = () => {
   return (
-    <section className="flex  items-center poppins-thin px-10 py-10  ">
+    <section className="flex items-center poppins-thin px-10 py-10  ">
       <div className="flex items-center m-auto  mt-20   justify-center ">
         <div className="background-image flex justify-between  gap-1">
           <div className="left px-4 flex flex-col justify-center ">

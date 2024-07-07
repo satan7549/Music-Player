@@ -1,6 +1,7 @@
 import JaiHo from "./JaiHo.mp3";
 import Poster from "./musicimage.png";
 import TaubaTauba from "./TaubaTauba.mp3";
+import Chal_Chaiya_Chaiya from "./chalchaiyachaiya.mp3";
 
 export const musicData = [
   {
@@ -23,11 +24,11 @@ export const musicData = [
   },
   {
     id: "3",
-    title: "Smooth Criminal - 2012 Remaster",
+    title: "Chal Chaiya Chaiya",
     playing: "407,234,064",
-    time: "4:17",
+    time: "7:31",
     album: "Thriller 25 Super Deluxe Edition",
-    songSrc: "",
+    songSrc: Chal_Chaiya_Chaiya,
     posterSrc: Poster,
   },
   {
