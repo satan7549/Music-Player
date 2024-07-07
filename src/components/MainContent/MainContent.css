@@ -1,0 +1,19 @@
+/* src/styles.css */
+
+.main-content {
+  padding: 20px; /* Example padding */
+}
+
+.main-content .section {
+  margin-bottom: 20px; /* Example margin */
+}
+
+.background-image {
+  width: full;
+  height: full;
+  background-image: url("../../assets/icons/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
