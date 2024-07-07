@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
-      <div className="w-full md:w-[20%] h-full">
+      <div className="w-[20%] h-full">
         <Sidebar />
       </div>
 
@@ -20,8 +20,8 @@ function App() {
       </div>
 
       {/* Player Controls */}
-      <div className="w-[20%]  h-full bg-gradient-to-b from-black to-red-900 text-white overflow-y-auto">
-        <div className="fixed bottom-0 right-0 mb-4 ">
+      <div className="w-[20%] border-l-2 border-yellow-600 h-full bg-gradient-to-b from-black to-red-900 text-white overflow-y-auto">
+        <div className="fixed bottom-0 right-0 mb-4 mr-4">
           <RightSide />
         </div>
       </div>
