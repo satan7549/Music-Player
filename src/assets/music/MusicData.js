@@ -2,6 +2,9 @@ import JaiHo from "./JaiHo.mp3";
 import Poster from "./musicimage.png";
 import TaubaTauba from "./TaubaTauba.mp3";
 import Chal_Chaiya_Chaiya from "./chalchaiyachaiya.mp3";
+import Tere_Hawaale from "./Tere_Hawaale.mp3";
+import Raam_Aayenge from "./Raam_Aayenge.mp3";
+import Pehle_Bhi_Main from "./Pehle_Bhi_Main.mp3";
 
 export const musicData = [
   {
@@ -33,20 +36,29 @@ export const musicData = [
   },
   {
     id: "4",
-    title: "Don't Stop Til You Get Enough",
+    title: "Tere Hawaale",
     playing: "398,315,942",
     time: "6:05",
     album: "Bad 25th Anniversary Edition",
-    songSrc: "",
+    songSrc: Tere_Hawaale,
     posterSrc: Poster,
   },
   {
     id: "5",
-    title: "Stop Til You Get Enough",
+    title: "Raam Aayenge",
     playing: "398,45,942",
     time: "6:05",
     album: "Bad 24th Anniversary Edition",
-    songSrc: "",
+    songSrc: Raam_Aayenge,
+    posterSrc: Poster,
+  },
+  {
+    id: "6",
+    title: "Pehle Bhi Main",
+    playing: "398,45,934",
+    time: "6:05",
+    album: "Bad 24th Anniversary Edition",
+    songSrc: Pehle_Bhi_Main,
     posterSrc: Poster,
   },
 ];
