@@ -96,7 +96,6 @@ const MobileNavbar = () => {
                       alt="Discover"
                     />
                   </span>
-
                   <span className="text-sm font-medium">Calender </span>
                 </div>
 
