@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 
 const useIsMobileOrTablet = () => {
   const [isMobileOrTablet, setIsMobileOrTablet] = useState(
-    window.innerWidth < 1024
+    window.innerWidth < 640
   );
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileOrTablet(window.innerWidth < 1024);
+      setIsMobileOrTablet(window.innerWidth < 640);
     };
 
     window.addEventListener("resize", handleResize);
