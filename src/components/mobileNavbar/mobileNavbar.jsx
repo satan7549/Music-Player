@@ -15,7 +15,7 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className="fixed z-10 block sm:hidden w-full py-2 px-4 h-20  bg-gradient-to-b from-red-900 ">
+    <div className="fixed z-10 block  w-full py-2 px-4 h-20  bg-gradient-to-b from-red-900 poppins-thin">
       <div className="flex  border-black items-center gap-10 justify-between">
         <div className="flex gap-5 text-white py-2 items-center ">
           <button className="text-2xl" onClick={toggleDrawer}>
@@ -38,7 +38,7 @@ const MobileNavbar = () => {
           className="top-0 left-0 h-auto fixed inset-0 w-full bg-white bg-opacity-75 z-50  space-y-3  overflow-y-scroll  scrollbar poppins-thin"
         >
           <div className=" border-black h-screen ">
-            <div className="h-screen  rounded-r-3xl border-green-700 px-6 py-4 bg-black shadow-md text-[#9A9AA9] p-2">
+            <div className="h-screen px-6 py-4 bg-black shadow-md text-[#9A9AA9] p-2">
               <div className="px-4  flex justify-between border-t-red-600 py-4 mb-2">
                 <FaMusic className="text-[1.5rem] text-[#FF5656]" />
                 <div className="flex gap-2">

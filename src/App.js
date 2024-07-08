@@ -14,10 +14,8 @@ function App() {
     <div className="flex h-screen bg-gradient-to-b from-red-900 to-black text-white">
       {isMobileOrTablet ? (
         <>
-          <div className="block sm:hidden">
-            <MobileNavbar />
-          </div>
-          <div className="px-4 m-auto mt-20  block sm:hidden">
+          <MobileNavbar />
+          <div className="p-4 m-auto mt-20 w-[80%]">
             <MainContent />
           </div>
         </>
