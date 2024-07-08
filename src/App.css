@@ -4,3 +4,7 @@
   /* font-style: normal; */
 }
 
+.overflow-y-scroll {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; 
+}
