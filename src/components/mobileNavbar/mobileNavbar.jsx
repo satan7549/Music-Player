@@ -35,21 +35,19 @@ const MobileNavbar = () => {
 
       {isDrawerOpen && (
         <div
-          className="top-0 left-0 h-auto 
-        fixed inset-0
-        w-full bg-gray-800 bg-opacity-75 z-50  space-y-3  overflow-y-scroll  scrollbar"
+          className="top-0 left-0 h-auto fixed inset-0 w-full bg-white bg-opacity-75 z-50  space-y-3  overflow-y-scroll  scrollbar poppins-thin"
         >
           <div className=" border-black h-screen ">
             <div className="h-screen  rounded-r-3xl border-green-700 px-6 py-4 bg-black shadow-md text-[#9A9AA9] p-2">
               <div className="px-4  flex justify-between border-t-red-600 py-4 mb-2">
-                <FaMusic className="text-[1.5rem] text-black" />
+                <FaMusic className="text-[1.5rem] text-[#FF5656]" />
                 <div className="flex gap-2">
                   <button>
                     <h1 className="ml-3 text-xl font-bold poppins-thin">
                       <span className="text-[#FF5656]"> Dream</span>Music
                     </h1>
                   </button>
-                  <button className="text-black" onClick={toggleDrawer}>
+                  <button className="text-white" onClick={toggleDrawer}>
                     &#10006;
                   </button>
                 </div>

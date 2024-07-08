@@ -50,42 +50,6 @@ const MusicTable = () => {
   return (
     <DndProvider backend={isMobileOrTablet ? TouchBackend : HTML5Backend}>
       {isMobileOrTablet ? (
-        // <section className="max-w-full mx-auto poppins-thin  border border-yellow-400">
-        //   <div className="flex justify-between items-center mb-4">
-        //     <h3 className="text-lg font-bold">Popular</h3>
-        //     <p>See All</p>
-        //   </div>
-        //   <div className="w-full text-sm shadow-md rounded-lg overflow-hidden">
-        //     <table className="w-full ">
-        //       <thead>
-        //         <tr>
-        //           <th className="p-2 text-left">#</th>
-        //           <th className="p-2 text-left"></th>
-        //           <th className="p-2 text-left">TITLE</th>
-
-        //           <th className="p-2 text-left">TIME</th>
-
-        //         </tr>
-        //       </thead>
-        //     </table>
-        //     <div className="h-[70vh] sm:h-auto overflow-auto max-h-screen-[80vh]">
-        //       <table className="w-full">
-        //         <tbody>
-        //           {songs.map((song, index) => (
-        //             <SongRow
-        //               key={song.id}
-        //               index={index}
-        //               song={song}
-        //               moveItem={moveItem}
-        //               playSong={playSong}
-        //               isPlaying={currentSong && currentSong.id === song.id}
-        //             />
-        //           ))}
-        //         </tbody>
-        //       </table>
-        //     </div>
-        //   </div>
-        // </section>
         <section className="max-w-full block mx-auto poppins-thin">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-lg font-bold">Popular</h3>
@@ -102,7 +66,7 @@ const MusicTable = () => {
                 </tr>
               </thead>
             </table>
-            <div className="h-[calc(100vh - 230px)] sm:h-auto overflow-auto max-h-[62vh]">
+            <div className="h-[calc(100vh - 230px)] sm:h-auto overflow-y-scroll max-h-[62vh]">
               <table className="w-full">
                 <tbody>
                   {songs.map((song, index) => (

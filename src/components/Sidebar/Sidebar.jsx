@@ -8,7 +8,7 @@ import musicIcon from "../../assets/icons/music.svg";
 
 function Sidebar() {
   return (
-    <aside className="w-full h-full bg-[#0E0E0E] text-white p-5 box-border">
+    <aside className="w-full h-full bg-[#0E0E0E] text-white p-5 box-border poppins-thin">
       <div className="flex items-center mb-5">
         <img src={musicIcon} className="w-12 h-12" alt="Music" />
         <h1 className="ml-3 text-xl font-bold poppins-thin">
