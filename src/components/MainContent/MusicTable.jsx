@@ -62,11 +62,11 @@ const MusicTable = () => {
                   <th className="p-2 text-left">#</th>
                   <th className="p-2 text-left"></th>
                   <th className="p-2 text-left">TITLE</th>
-                  <th className="p-2 text-left">TIME</th>
+                  <th className="p-2 text-right">TIME</th>
                 </tr>
               </thead>
             </table>
-            <div className="h-[calc(100vh - 230px)] sm:h-auto overflow-y-scroll max-h-[62vh]">
+            <div className="sm:h-auto overflow-y-scroll max-h-[62vh]">
               <table className="w-full">
                 <tbody>
                   {songs.map((song, index) => (
