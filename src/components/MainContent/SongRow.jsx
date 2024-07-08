@@ -75,7 +75,10 @@ const SongRow = ({ song, index, moveItem, playSong, isPlaying }) => {
             <td className="p-2">{song.title}</td>
             <td className="p-2">{song.playing}</td>
             <td className="p-2">{song.time}</td>
-            <td className="p-2 w-[50px] text-right overflow-hidden text-ellipsis whitespace-nowrap    ">
+            {/* <td className="p-4 overflow-hidden text-ellipsis whitespace-nowrap w-32 inline-block align-middle">
+              {song.album}
+            </td> */}
+            <td className="p-4 overflow-hidden text-ellipsis whitespace-nowrap w-44 inline-block align-middle ">
               {song.album}
             </td>
           </>

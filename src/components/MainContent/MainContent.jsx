@@ -9,14 +9,22 @@ function MainContent() {
 
   return (
     <>
-      {isMobileOrTablet ? (
+      <main className=" ">
+        {isMobileOrTablet ? null : (
+          <>
+            <ArtistInfo />
+          </>
+        )}
+        <MusicTable />
+      </main>
+      {/* {isMobileOrTablet ? (
         <MusicTable />
       ) : (
         <main className="w-full  overflow-y-auto ">
           <ArtistInfo />
           <MusicTable />
         </main>
-      )}
+      )} */}
     </>
   );
 }
