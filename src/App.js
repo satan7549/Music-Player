@@ -17,7 +17,7 @@ function App() {
           <div className="block sm:hidden">
             <MobileNavbar />
           </div>
-          <div className="px-4 m-auto mt-20  block sm:hidden border border-blue-600">
+          <div className="px-4 m-auto mt-20  block sm:hidden">
             <MainContent />
           </div>
         </>

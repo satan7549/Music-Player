@@ -15,6 +15,7 @@ import FastForwardIcon from "../../assets/icons/fastforward.svg";
 import RandomIcon from "../../assets/icons/random.svg";
 
 import Poster from "../../assets/music/musicimage.png";
+import { TouchBackend } from "react-dnd-touch-backend";
 
 const MusicTable = () => {
   const isMobileOrTablet = useIsMobileOrTablet();
@@ -47,7 +48,7 @@ const MusicTable = () => {
   };
 
   return (
-    <DndProvider backend={HTML5Backend}>
+    <DndProvider backend={isMobileOrTablet ? TouchBackend : HTML5Backend}>
       {isMobileOrTablet ? (
         // <section className="max-w-full mx-auto poppins-thin  border border-yellow-400">
         //   <div className="flex justify-between items-center mb-4">
@@ -85,7 +86,7 @@ const MusicTable = () => {
         //     </div>
         //   </div>
         // </section>
-        <section className="max-w-full block mx-auto poppins-thin border border-yellow-400">
+        <section className="max-w-full block mx-auto poppins-thin">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-lg font-bold">Popular</h3>
             <p>See All</p>
